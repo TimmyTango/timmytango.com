@@ -1,0 +1,17 @@
+@mixin generate-color($base-class, $color, $fg-color) {
+    .#{""+$base-class} {
+        &:not(.text) {
+            background-color: $color;
+            color: $fg-color;
+        }
+    
+        &.text {
+            color: $color;
+        }
+    }
+}
+
+@include generate-color('primary', $primary-color, #fff);
+@include generate-color('secondary', $secondary-color, #fff);
+@include generate-color('black', #000, #fff);
+@include generate-color('white', #fff, #000);

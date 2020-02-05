@@ -1,0 +1,18 @@
+.container:not(.no-padding) {
+    padding : 1rem;
+}
+
+// @include create-mq($breakpoint-lg) {
+//     .container {
+//         margin: 0 auto;
+//         width: 80%;
+//     }
+// }
+
+@include create-mq($breakpoint-lg) {
+    .container {
+        margin: 0 auto;
+        width: 70%;
+        max-width: 1200px;
+    }
+}
