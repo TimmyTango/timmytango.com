@@ -2,7 +2,6 @@ $link-color: $primary-color;
 
 a {
     text-decoration: none;
-    font-weight: bold;
     color: $link-color;
 
     &:hover:not(.no-underline) {
