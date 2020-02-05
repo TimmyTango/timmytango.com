@@ -1,8 +1,14 @@
-$menu-height: 7rem;
+$menu-height: 5rem;
 
 .header-spacer {
     width: 100%;
     height: $menu-height;
+}
+
+span.anchor {
+	position: relative;
+	top: -$menu-height;
+	visibility: hidden;
 }
 
 header {
@@ -81,6 +87,11 @@ header {
                 color: white;
                 font-weight: 501;
                 border-bottom: 1px solid #444;
+                cursor: pointer;
+
+                &:hover {
+                    color: $primary-color;
+                }
             }
         }
 
@@ -93,13 +104,9 @@ header {
                 height: 100%;
                 align-items: center;
                 margin-right: 2rem;
-
-                a {
-                    margin-left: 4rem;
-                }
-
-
+                
                 li {
+                    margin-left: 4rem;
                     border: none;
                     color: $neutral-color;
                     

@@ -1,6 +1,13 @@
-const topNav = document.getElementById('top-nav');
+const topNav = document.querySelector('#top-nav');
 const menuButton = topNav.querySelector('i');
 const menu = topNav.querySelector('ul');
+const sectionLinks = menu.querySelectorAll('li');
+
+for(let link of sectionLinks) {
+    link.addEventListener('click', event => {
+        document.querySelector(`section#${link.innerText.toLowerCase()} span.anchor`).scrollIntoView({behavior: "smooth"});
+    })
+}
 
 menuButton.addEventListener('click', event => {
     event.stopPropagation();
@@ -13,17 +20,11 @@ menuButton.addEventListener('click', event => {
 })
 
 function openMenu() {
-    // menu.classList.remove('closing');
     menu.classList.add('active');
     document.addEventListener('click', closeMenu);
 }
 
 function closeMenu() {
     menu.classList.remove('active');
-    // menu.classList.add('closing');
     document.removeEventListener('click', closeMenu);
-}
-
-const sections = {
-    project: document.querySelector('#projects')
 }
