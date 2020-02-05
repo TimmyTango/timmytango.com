@@ -3,6 +3,10 @@ $menu-height: 5rem;
 .header-spacer {
     width: 100%;
     height: $menu-height;
+
+    @include create-mq($breakpoint-md) {
+        display: none;
+    }
 }
 
 span.anchor {
@@ -19,6 +23,15 @@ header {
     width: 100%;
     height: $menu-height;
     z-index: 100;
+
+    @include create-mq($breakpoint-md) {
+        position: static;
+    }
+
+    @include create-mq($breakpoint-xl) {
+        width: #{$breakpoint-xl}px;
+        margin: 0 auto;
+    }
 
     .logo {
 
@@ -99,27 +112,27 @@ header {
 
         @include create-mq($breakpoint-md) {
             ul {
-                position: static;
-                display: flex;
-                visibility: visible !important;
-                background: none;
-                height: 100%;
-                align-items: center;
-                margin-right: 2rem;
-                
-                li {
-                    margin-left: 4rem;
-                    border: none;
-                    color: $neutral-color;
-                    
-                     &:hover {
-                         color: $secondary-color;
-                     }
-                }
+                display: none;
             }
 
             i {
                 display: none;
+            }
+        }
+    }
+
+    .header-icon-wrapper {
+        display: none;
+
+        @include create-mq($breakpoint-md) {
+            display: flex;
+            font-size: 3rem;
+            align-items: center;
+            padding: 0 2rem;
+
+            a {
+                color: black;
+                margin: 0 2rem;
             }
         }
     }

@@ -47,5 +47,9 @@ main {
             display: flex;
             justify-content: space-evenly;
         }
+
+        @include create-mq($breakpoint-md) {
+            display: none;
+        }
     }
 }
