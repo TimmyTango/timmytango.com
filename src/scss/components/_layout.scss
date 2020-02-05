@@ -13,6 +13,11 @@
     .container {
         margin: 0 auto;
         width: 70%;
-        max-width: 1200px;
+        max-width: 1000px;
+
+        &.no-max-width {
+            max-width: none;
+            width: 100%;
+        }
     }
 }

@@ -1,19 +1,51 @@
 @import 'navigation';
 
 body {
-    background: $tertiary-color;
+    background: $neutral-color;
 }
 
 main {
-    section:not(:first-child) {
-        margin-top: 2rem;
-    }
-}
+    background: $neutral-color;
+    color: white;
+    padding-bottom: 3rem;
 
-section {
-	box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-	border: 1px solid #ddd;
-	padding: 0 1rem;
-    margin: 1rem;
-    background: white;
+    h5 {
+        margin: 3rem 0;
+        font-style: italic;
+    }
+
+    section {
+        padding: 0 1rem;
+        margin-top: 3rem;
+
+        h2 {
+            background: $secondary-color;
+            margin-bottom: 1rem;
+        }
+    }
+
+    section:nth-child(even) {
+        h2 {
+            background: $tertiary-color;
+        }
+    }
+
+    section#projects {
+        img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    section#contact {
+        .icon-wrapper {
+            font-size: 4rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
 }

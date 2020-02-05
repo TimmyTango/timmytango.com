@@ -2,7 +2,7 @@
     @include create-mq($breakpoint) {
         @for $i from 1 through $grid-cols {
             .col#{$modifier}-#{$i} {
-                padding: 0.3rem;
+                padding: 0.5rem;
                 flex-basis: (100 / ($grid-cols / $i) ) * 1%;
             }
         }

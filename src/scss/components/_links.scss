@@ -1,17 +1,19 @@
+$link-color: $primary-color;
+
 a {
     text-decoration: none;
     font-weight: bold;
-    color: $secondary-color;
+    color: $link-color;
 
     &:hover:not(.no-underline) {
         text-decoration: underline;
     }
 
     &:visited {
-        color: $secondary-color;
+        color: $link-color;
     }
 
     &:active {
-        color: darken($secondary-color, 10%);
+        color: darken($link-color, 10%);
     }
 }

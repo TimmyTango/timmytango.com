@@ -7,36 +7,54 @@
     <link type="text/css" rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css" />
 </head>
 <body>
-    <div class="container no-padding">
-        <header class="primary">
-            <a href="/" class="no-underline">
-                <div class="logo-container">
-                    <img src="img/tim-600.jpg" alt="logo" />
-                    <h1 class="white text">TimmyTango</h1>
-                </div>
-            </a>
-            <nav id="top-nav">
-                <i class="fas fa-bars"></i>
-                <ul>
-                    <a href="#about" class="no-underline"><li>About</li></a>
-                    <a href="#projects" class="no-underline"><li>Projects</li></a>
-                    <a href="#contact" class="no-underline"><li>Contact</li></a>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <header class="primary">
+        <a href="/" class="logo no-underline">
+            <div class="logo-text">timmy<br>tango</div>
+        </a>
+        <nav id="top-nav">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <a href="#about-section" class="no-underline"><li>About</li></a>
+                <a href="#projects-section" class="no-underline"><li>Projects</li></a>
+                <a href="#contact-section" class="no-underline"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="header-spacer">&nbsp;</div>
     <main class="container no-padding">
+        <span id="about-section"></span>
+        <h5 class="center">Developer, personal project procrastinator and habitual tinkerer.</h5>
         <section id="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus, lacus a molestie congue, lorem justo bibendum purus, ac sollicitudin nisl velit id purus. Sed hendrerit ipsum nec luctus interdum. Praesent ac blandit sem, et tincidunt orci. Mauris ornare efficitur magna, sed congue est volutpat non. Donec efficitur sagittis ligula, et condimentum ex feugiat et. Aenean elementum convallis leo in congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec aliquet non enim eget viverra. Curabitur pharetra finibus nisi eu lobortis. Aliquam laoreet suscipit tellus, quis dignissim lacus malesuada sit amet. Duis faucibus aliquam eros vitae ullamcorper. Sed vel nibh ut odio pharetra condimentum eget quis dui. Integer metus augue, commodo nec est eu, ullamcorper placerat nulla. Vivamus non neque enim. Ut mauris leo, pulvinar eget diam vel, tempor aliquet nisl. Nunc vulputate velit sit amet nisi egestas varius.</p>
+            <h2 class="center">About</h2>
+            <p>I'm a full-stack web developer from Memphis, TN. I currently work for SmartBear on the CrossBrowserTesting team. Outside of work I like to start projects I'll never finish, including games, web apps, and native phone apps.</p>
+            <br>
+            <p>Anything actually interesting? I have four dogs, so that means I have sixteen paws to clean when it rains outside. </p>
+            <span id="projects-section"></span>
         </section>
         <section id="projects">
-            <h2>Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus, lacus a molestie congue, lorem justo bibendum purus, ac sollicitudin nisl velit id purus. Sed hendrerit ipsum nec luctus interdum. Praesent ac blandit sem, et tincidunt orci. Mauris ornare efficitur magna, sed congue est volutpat non. Donec efficitur sagittis ligula, et condimentum ex feugiat et. Aenean elementum convallis leo in congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec aliquet non enim eget viverra. Curabitur pharetra finibus nisi eu lobortis. Aliquam laoreet suscipit tellus, quis dignissim lacus malesuada sit amet. Duis faucibus aliquam eros vitae ullamcorper. Sed vel nibh ut odio pharetra condimentum eget quis dui. Integer metus augue, commodo nec est eu, ullamcorper placerat nulla. Vivamus non neque enim. Ut mauris leo, pulvinar eget diam vel, tempor aliquet nisl. Nunc vulputate velit sit amet nisi egestas varius.</p>
+            <h2 class="center">Projects</h2>
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <img src="./img/party-app.png">
+                </div>
+                <div class="col-12 col-sm-8">
+                    <h4>Party Voting App</h4>
+                    <p>React on front-end</p>
+                    <p>Node on back-end</p>
+                    <p>WebSockets for communication</p>
+                    <br>
+                    <p>Voting app I made for our house parties. The server pulls info from our Sonos system and takes control over what gets played. It pulls the current playlist and presents four random song choices. Once the current song ends, it plays the top choice.</p>
+                </div>
+            </div>
+            <span id="contact-section"></span>
         </section>
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus, lacus a molestie congue, lorem justo bibendum purus, ac sollicitudin nisl velit id purus. Sed hendrerit ipsum nec luctus interdum. Praesent ac blandit sem, et tincidunt orci. Mauris ornare efficitur magna, sed congue est volutpat non. Donec efficitur sagittis ligula, et condimentum ex feugiat et. Aenean elementum convallis leo in congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec aliquet non enim eget viverra. Curabitur pharetra finibus nisi eu lobortis. Aliquam laoreet suscipit tellus, quis dignissim lacus malesuada sit amet. Duis faucibus aliquam eros vitae ullamcorper. Sed vel nibh ut odio pharetra condimentum eget quis dui. Integer metus augue, commodo nec est eu, ullamcorper placerat nulla. Vivamus non neque enim. Ut mauris leo, pulvinar eget diam vel, tempor aliquet nisl. Nunc vulputate velit sit amet nisi egestas varius.</p>
+            <h2 class="center">Contact</h2>
+            <div class="container icon-wrapper">
+                <a href="mailto:tim@timmytango.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/timmytango"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tim-hamilton-921171108/"><i class="fab fa-linkedin"></i></a>
+            </div>
         </section>
     </main>
 

@@ -13,11 +13,17 @@ menuButton.addEventListener('click', event => {
 })
 
 function openMenu() {
+    // menu.classList.remove('closing');
     menu.classList.add('active');
     document.addEventListener('click', closeMenu);
 }
 
 function closeMenu() {
     menu.classList.remove('active');
+    // menu.classList.add('closing');
     document.removeEventListener('click', closeMenu);
+}
+
+const sections = {
+    project: document.querySelector('#projects')
 }
