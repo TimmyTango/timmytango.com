@@ -52,4 +52,10 @@ main {
             display: none;
         }
     }
+
+    @include create-mq($breakpoint-sm) {
+        .float-right {
+            order: 99;
+        }
+    }
 }
