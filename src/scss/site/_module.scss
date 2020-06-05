@@ -2,6 +2,10 @@
 
 body {
     background: $neutral-color;
+
+    &.freeze {
+        overflow: hidden;
+    }
 }
 
 main {
@@ -31,13 +35,36 @@ main {
     }
 
     section#projects {
+        .lightbox.visible {
+            position: fixed;
+            top: 0;
+            left:0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 200;
+        }
+
         img {
-            max-width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
+            cursor: pointer;
+
+            &:not(.expand) {
+                max-width: 100%;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &.expand {
+                max-width: 95%;
+                max-height: 95%;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 
@@ -51,6 +78,18 @@ main {
         @include create-mq($breakpoint-md) {
             display: none;
         }
+    }
+
+    .mobile-only {
+        margin: 1.5rem 0;
+
+        @include create-mq($breakpoint-sm) {
+            display: none;
+        }
+    }
+
+    .vertical-align {
+        margin: auto 0;
     }
 
     @include create-mq($breakpoint-sm) {

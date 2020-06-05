@@ -35,3 +35,19 @@ function closeMenu() {
     menu.classList.remove('active');
     document.removeEventListener('click', closeMenu);
 }
+
+function toggleImageExpansion(event) {
+    if (window.innerWidth > 576) {
+        const img = event.target;
+        if (img) {
+            img.classList.toggle('expand');
+            img.parentNode.classList.toggle('visible');
+            document.body.classList.toggle('freeze');
+        }
+    }
+}
+const images = document.querySelectorAll('#projects img');
+
+for (let img of images) {
+    img.addEventListener('click', toggleImageExpansion);
+}
