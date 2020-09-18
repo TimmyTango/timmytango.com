@@ -16,27 +16,57 @@ span.anchor {
 }
 
 aside {
+    @include create-mq-max-width($breakpoint-lg)  {
+        position: relative;
+        animation-duration: 1s;
+        animation-name: slideFromTop;
+
+        @keyframes slideFromTop {
+            from {
+                top: -100vh;
+            }
+
+            to {
+                top:0;
+            }
+        }
+    }
+
     @include create-mq($breakpoint-lg) {
         position: fixed;
         left: 0;
         top: 0;
         height: 100%;
-        width: 400px;
+        width: 300px;
+
+        animation-duration: 1s;
+        animation-name: slideFromLeft;
+
+        @keyframes slideFromLeft {
+            from {
+                left: -400px;
+            }
+
+            to {
+                left: 0;
+            }
+        }
     }
 
     .bio {
         padding: 2rem;
     
         p {
-            line-height: 2.0;
             font-size: 1.8rem;
             color: #fafaff
         }
     }
 
     .aside-content {
-        .logo {
-    
+        display: flex;
+        justify-content: center;
+
+        .logo {    
             background: $primary-color;
             font-size: 2.2rem;
             color: black;

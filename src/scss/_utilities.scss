@@ -7,3 +7,13 @@
         }
     }
 }
+
+@mixin create-mq-max-width($breakpoint) {
+    @if($breakpoint == 0) {
+        @content;
+    } @else {
+        @media screen and (max-width: $breakpoint *1px - 1px) {
+            @content;
+        }
+    }
+}
