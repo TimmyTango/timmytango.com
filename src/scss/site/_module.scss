@@ -39,6 +39,8 @@ main {
     }
 
     section#projects {
+        overflow: hidden;
+
         .lightbox.visible {
             position: fixed;
             top: 0;
