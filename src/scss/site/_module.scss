@@ -8,10 +8,20 @@ body {
     }
 }
 
+.site-wrapper {
+    display: block;
+}
+
 main {
     background: $neutral-color;
     color: white;
-    padding-bottom: 3rem;
+
+    @include create-mq($breakpoint-lg) {
+        position: relative;
+        left: 400px;
+        width: calc(100% - 410px);
+        overflow-x: hidden;
+    }
 
     h5 {
         margin: 3rem 0;
@@ -19,8 +29,7 @@ main {
     }
 
     section {
-        padding: 0 1rem;
-        margin-top: 3rem;
+        padding: 2rem;
 
         h2 {
             background: $secondary-color;
@@ -50,7 +59,6 @@ main {
 
             &:not(.expand) {
                 max-width: 100%;
-                border: 1px solid #ddd;
                 border-radius: 10px;
                 position: relative;
                 left: 50%;
