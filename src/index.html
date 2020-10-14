@@ -13,13 +13,13 @@
 </head>
 
 <body class="">
-    <section class="py-16 min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-indigo-700 to-teal-500 text-white">
-        <h1 class="font-mono text-4xl text-center border-4 border-white px-4 py-2">TimmyTango</h1>
-        <div class="p-6 md:p-12 mt-12 max-w-screen-md text-xl bg-black bg-opacity-25 md:rounded-lg md:shadow-lg">
+    <section class="about">
+        <h1 class="title">TimmyTango</h1>
+        <div class="content-container mt-12">
             <p>I'm Tim Hamilton, a full-stack web developer from Memphis, TN. Currently, I'm the main dev for <a class="underline hover:text-purple-300 text-purple-400" href="https://teamzero.com/">ZERO</a>, an app that makes it easy for companies to track, manage, and report safety issues with a modern web app.</p>
             <br>
             <p>Outside of work I like to start projects I'll never finish, usually something to do with games, apps, or electronics. I'm an avid board-game fan with over 70 games in my collection. One day I'll get around to actually cataloging my collection. Oh, and I also have four dogs, so that means I have sixteen paws to clean when it rains outside.</p>
-            <div class="mt-4 p-2 border-4 border-white rounded bg-black flex flex-wrap justify-center">
+            <div class="image-wrapper flex-wrap">
                 <img class="p-1 w-1/2" src="./img/artie.jpg" alt="Artie">
                 <img class="p-1 w-1/2" src="./img/ellie.jpg" alt="Ellie Mae">
                 <img class="p-1 w-1/2" src="./img/goob.jpg" alt="Goob">
@@ -27,54 +27,54 @@
             </div>
         </div>
     </section>
-    <section class="py-16 min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-purple-800 to-pink-500 text-white">
-        <h1 class="font-mono text-4xl text-center border-4 border-white px-4 py-2">Projects</h1>
+    <section class="projects">
+        <h1 class="title">Projects</h1>
         <div class="mt-12 flex flex-wrap justify-center gap-8">
-            <div class="p-6 md:p-12 max-w-screen-md text-xl bg-black bg-opacity-25 md:rounded-lg md:shadow-lg">
+            <div class="content-container">
                 <h2 class="text-3xl text-center">ZERO</h2>
-                <div class="my-4 text-base flex flex-col items-center sm:justify-around sm:flex-row">
+                <div class="techstack">
                     <p>React on front-end</p>
                     <p>Django on back-end</p>
                     <p>AWS for infrastructure</p>
                 </div>
                 <p>I'm the main dev for the back-end code and responsible for our AWS infrastructure. I also jump on the front-end and implement features when I'm needed there. Zero is a modern take on EH&amp;S software that encourages top to bottom communication around accident reporting, compliance, and prevention. It has a ton of features fit for the modern workplace and works seamlessly across desktop and mobile devices.</p>
-                <div class="mt-4 p-2 border-4 border-white rounded bg-black flex justify-center">
+                <div class="image-wrapper">
                     <img src="./img/zero.png" alt="zero app">
                 </div>
             </div>
-            <div class="p-6 md:p-12 max-w-screen-md text-xl bg-black bg-opacity-25 md:rounded-lg md:shadow-lg">
+            <div class="content-container">
                 <h2 class="text-3xl text-center">CrossBrowserTesting</h2>
-                <div class="my-4 text-base flex flex-col items-center sm:justify-around sm:flex-row">
+                <div class="techstack">
                     <p>AngularJS on front-end</p>
                     <p>Node on back-end</p>
                     <p>MySQL/Mongo for storage</p>
                 </div>
                 <p>I was part of the full-stack team that worked on CrossBrowserTesting from SmartBear. CBT allows its users to test their sites and web apps against almost any browser and operating system you can imagine. The CBT toolkit includes manual testing, a Selenium grid, automated Screenshots (including cross-browser full-page capture), and Record & Replay, a code-less automation test tool.</p>
-                <div class="mt-4 p-2 border-4 border-white rounded bg-black flex justify-center">
+                <div class="image-wrapper">
                     <img src="./img/cbt.png" alt="cbt app">
                 </div>
             </div>
-            <div class="p-6 md:p-12 max-w-screen-md text-xl bg-black bg-opacity-25 md:rounded-lg md:shadow-lg">
+            <div class="content-container">
                 <h2 class="text-3xl text-center">Sonos Voting App</h2>
-                <div class="my-4 text-base flex flex-col items-center sm:justify-around sm:flex-row">
+                <div class="techstack">
                     <p>React on front-end</p>
                     <p>Node on back-end</p>
                     <p>WebSockets for communication</p>
                 </div>
                 <p>Voting app I made for our house parties. The server pulls info from our Sonos system and takes control over what gets played. It pulls the current playlist and presents four random song choices. Once the current song ends, it plays the top choice.</p>
-                <div class="mt-4 p-2 border-4 border-white rounded bg-black flex justify-center">
+                <div class="image-wrapper">
                     <img src="./img/party-app.png" alt="voting app">
                 </div>
             </div>
-            <div class="p-6 md:p-12 max-w-screen-md text-xl bg-black bg-opacity-25 md:rounded-lg md:shadow-lg">
+            <div class="content-container">
                 <h2 class="text-3xl text-center">Personal Dev Log</h2>
-                <div class="my-4 text-base flex flex-col items-center sm:justify-around sm:flex-row">
+                <div class="techstack">
                     <p>React on front-end</p>
                     <p>Node on back-end</p>
                     <p>MongoDB for storage</p>
                 </div>
                 <p>WIP app I'm working on for keeping a daily developer log. It's pretty bare-bones at the moment and development has paused. I do plan on picking this back up, but will probably move to a Django/Postgres back-end.</p>
-                <div class="mt-4 p-2 border-4 border-white rounded bg-black flex justify-center">
+                <div class="image-wrapper">
                     <img src="./img/devlog.png" alt="devlog app">
                 </div>
             </div>
