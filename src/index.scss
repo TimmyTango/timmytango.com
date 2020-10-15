@@ -14,12 +14,12 @@ section {
     }
 
     .title {
-        @apply font-mono italic text-4xl text-center border-4 border-white px-4 py-2 bg-black bg-opacity-25;
+        @apply font-mono italic text-4xl text-center border-4 border-white px-4 py-2 bg-black bg-opacity-50;
     }
 }
 
 .content-container {
-    @apply p-6 max-w-screen-md text-xl bg-black bg-opacity-50;
+    @apply p-6 max-w-screen-md text-xl bg-black bg-opacity-75;
 
     @screen md {
         @apply p-12 rounded-lg shadow-lg;
@@ -27,7 +27,11 @@ section {
 }
 
 .image-wrapper {
-    @apply mt-4 p-2 border-4 border-white rounded bg-black flex justify-center;
+    @apply mt-4 flex justify-center;
+
+    img:not(.no-border) {
+        @apply border border-gray-600
+    }
 }
 
 .techstack {
