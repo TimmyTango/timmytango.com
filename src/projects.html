@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<include src="./partials/head.html"></include>
+<body>
+    <include src="./partials/header.html"></include>
+    <main class="projects">
+        <h1>Projects</h1>
+        <section>
+            <h2>Logish</h2>
+            <div>
+                <span class="bold">Tech:</span>
+                Tailwind, AlpineJS
+            </div>
+            <p>Logish is my current side-project. It's a dev journal/log book. Great for taking quick notes, documenting tasks, or just putting thoughts out there. Supports markdown, tagging, filtering, import/export as JSON, and works great on mobile devices. Everything is saved locally for now, but I have a Django app that is ready to deploy that allows account creation and saves everything to a database.</p>
+            <p><a href="https://logish.timmytango.com">Try it out!</a></p>
+            <div class="image-wrapper">
+                <img src="./img/logish.png" alt="logish app">
+            </div>
+        </section>
+        <section>
+            <h2>ZERO</h2>
+            <div>
+                <span class="bold">Tech:</span>
+                React, Django, AWS, Zappa, Postgres
+            </div>
+            <p>I'm the main dev for the back-end code and responsible for our AWS infrastructure. I also jump on the front-end and implement features when I'm needed there. Zero is a modern take on EH&amp;S software that encourages top to bottom communication around accident reporting, compliance, and prevention. It has a ton of features fit for the modern workplace and works seamlessly across desktop and mobile devices.</p>
+            <div class="image-wrapper">
+                <img src="./img/zero.png" alt="zero app">
+            </div>
+        </section>
+        <section>
+            <h2 >CrossBrowserTesting</h2>
+            <div>
+                <span class="bold">Tech:</span>
+                AngularJS, Node, MySQL, Mongo, Redis
+            </div>
+            <p>I was part of the full-stack team that worked on CrossBrowserTesting from SmartBear. CBT allows its users to test their sites and web apps against almost any browser and operating system you can imagine. The CBT toolkit includes manual testing, a Selenium grid, automated Screenshots (including cross-browser full-page capture), and Record & Replay, a code-less automation test tool.</p>
+            <div class="image-wrapper">
+                <img src="./img/cbt.png" alt="cbt app">
+            </div>
+        </section>
+        <section>
+            <h2>Sonos Voting App</h2>
+            <div>
+                <span class="bold">Tech:</span>
+                React, Node, WebSockets
+            </div>
+            <p>Voting app I made for our house parties. The server pulls info from our Sonos system and takes control over what gets played. It pulls the current playlist and presents four random song choices. Once the current song ends, it plays the top choice.</p>
+            <div class="image-wrapper">
+                <img src="./img/party-app.png" alt="voting app">
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
