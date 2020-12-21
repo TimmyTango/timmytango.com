@@ -1,88 +1,20 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="Tim Hamilton" />
-    <meta charset="UTF-8" />
-    <meta name="description" content="Personal website of Tim Hamilton. You'll find information about me, projects I'm working on, and contact details." />
-    <title>Tim Hamilton | timmytango.com</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"/>
-    <link rel="stylesheet" href="./index.scss">
-    <link rel="canonical" href="https://timmytango.com" />
-</head>
-
-<body class="">
-    <script data-goatcounter="https://timmytango.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
-    <section class="about">
-        <h1 class="title">TimmyTango</h1>
-        <div class="content-container mt-12">
-            <p>I'm Tim Hamilton, a full-stack web developer from Memphis, TN. Currently, I'm the main dev for <a class="underline hover:text-pink-600 text-pink-400" target="_blank" rel="noopener noreferrer" href="https://teamzero.com/">ZERO</a>, an app that makes it easy for companies to track, manage, and report safety issues with a modern web app.</p>
-            <br>
-            <p>Outside of work I like to start projects I'll never finish, usually something to do with games, apps, or electronics. I'm an avid board-game fan with over 70 games in my collection. One day I'll get around to actually cataloging my collection. Oh, and I also have four dogs, so that means I have sixteen paws to clean when it rains outside.</p>
-            <div class="image-wrapper flex-wrap">
-                <img class="p-1 w-1/2 no-border" src="./img/artie.jpg" alt="Artie">
-                <img class="p-1 w-1/2 no-border" src="./img/ellie.jpg" alt="Ellie Mae">
-                <img class="p-1 w-1/2 no-border" src="./img/goob.jpg" alt="Goob">
-                <img class="p-1 w-1/2 no-border" src="./img/teddy.jpg" alt="Teddy">
-            </div>
+<include src="./partials/head.html"></include>
+<body>
+    <include src="./partials/header.html"></include>
+    <main class="about">
+        <h1>About</h1>
+        <p>I'm Tim Hamilton, a full-stack web developer from Memphis, TN. Currently, I'm the main dev for <a target="_blank" rel="noopener noreferrer" href="https://teamzero.com/">ZERO</a>, an app that makes it easy for companies to track, manage, and report safety issues with a modern web app.</p>
+        <p>Outside of work I like to start projects I'll never finish, usually something to do with games, apps, or electronics. I'm an avid board-game fan with over 70 games in my collection. One day I'll get around to actually cataloging my collection. Oh, and I also have four dogs, so that means I have sixteen paws to clean when it rains outside.</p>
+        <div class="image-wrapper dogs">
+            <img src="./img/artie.jpg" alt="Artie">
+            <img src="./img/ellie.jpg" alt="Ellie Mae">
+            <img src="./img/goob.jpg" alt="Goob">
+            <img src="./img/teddy.jpg" alt="Teddy">
         </div>
-    </section>
-    <section class="projects">
-        <h1 class="title">Projects</h1>
-        <div class="mt-12 flex flex-wrap justify-center gap-8">
-            <div class="content-container">
-                <h2 class="text-3xl text-center">Logish</h2>
-                <div class="techstack">
-                    <p>Tailwind</p>
-                    <p>Alpine</p>
-                    <p>Local Storage</p>
-                </div>
-                <p>Logish is my current side-project. It's a dev journal/log book. Great for taking quick notes, documenting tasks, or just putting thoughts out there. Supports markdown, tagging, filtering, import/export as JSON, and works great on mobile devices. Everything is saved locally for now, but I plan on implementing cloud sync as the next big feature.</p>
-                <a class="mt-2 block w-full text-center text-2xl underline hover:text-pink-600 text-pink-400" href="https://logish.timmytango.com">Try it out here!</a>
-                <div class="image-wrapper">
-                    <img src="./img/logish.png" alt="logish app">
-                </div>
-            </div>
-            <div class="content-container">
-                <h2 class="text-3xl text-center">ZERO</h2>
-                <div class="techstack">
-                    <p>React on front-end</p>
-                    <p>Django on back-end</p>
-                    <p>AWS for infrastructure</p>
-                </div>
-                <p>I'm the main dev for the back-end code and responsible for our AWS infrastructure. I also jump on the front-end and implement features when I'm needed there. Zero is a modern take on EH&amp;S software that encourages top to bottom communication around accident reporting, compliance, and prevention. It has a ton of features fit for the modern workplace and works seamlessly across desktop and mobile devices.</p>
-                <div class="image-wrapper">
-                    <img src="./img/zero.png" alt="zero app">
-                </div>
-            </div>
-            <div class="content-container">
-                <h2 class="text-3xl text-center">CrossBrowserTesting</h2>
-                <div class="techstack">
-                    <p>AngularJS on front-end</p>
-                    <p>Node on back-end</p>
-                    <p>MySQL/Mongo for storage</p>
-                </div>
-                <p>I was part of the full-stack team that worked on CrossBrowserTesting from SmartBear. CBT allows its users to test their sites and web apps against almost any browser and operating system you can imagine. The CBT toolkit includes manual testing, a Selenium grid, automated Screenshots (including cross-browser full-page capture), and Record & Replay, a code-less automation test tool.</p>
-                <div class="image-wrapper">
-                    <img src="./img/cbt.png" alt="cbt app">
-                </div>
-            </div>
-            <div class="content-container">
-                <h2 class="text-3xl text-center">Sonos Voting App</h2>
-                <div class="techstack">
-                    <p>React on front-end</p>
-                    <p>Node on back-end</p>
-                    <p>WebSockets for communication</p>
-                </div>
-                <p>Voting app I made for our house parties. The server pulls info from our Sonos system and takes control over what gets played. It pulls the current playlist and presents four random song choices. Once the current song ends, it plays the top choice.</p>
-                <div class="image-wrapper">
-                    <img src="./img/party-app.png" alt="voting app">
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="dogs-caption">Artie, Ellie, Goober, and Teddy</div>
+    </main>
+    <script src="./js/app.js"></script>
 </body>
-
 </html>
